@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="../js/jquery.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h2>KKULINER</h2>
+  </div>
+  <div class="nav">
+    <div class="menu-bar">
+      <a href="index.html">Home</a>
+      <a href="register.html">SignUp</a>
+      <a href="login.html">LogIn</a>
+      <a href="feedback.html">Feedback</a>
+      <a href="rating.html">Rating</a>
+      <a href="forum.html">Forum</a>
+    </div>
+  </div>
+  <div class="content-forum">
+    <div class="container">
+      <div class="row">
+        <div class="col col-1of3">
+          <div class="panel">
+            <p>
+              <strong>Create New Thread</strong>
+            </p>
+            <form action="#" id="js-create-thread">
+              <label for="js-thread-name">Name</label>
+              <input type="text" class="input" id="js-thread-name" placeholder="Insert your name">
+              <br>
+              <label for="js-thread-content">Content</label>
+              <textarea class="input" id="js-thread-content" rows="5" placeholder="Share your thought"></textarea>
+              <br>
+              <div class="form-error js-form-error">Name or Content must be filled!</div>
+              <button class="button button-blue button-block" type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+        <div class="col col-2of3">
+          <div id="js-thread-container"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    KKULINER © 2020
+  </div>
+  <script src="../js/forum.js"></script>
+</body>
+</html>
